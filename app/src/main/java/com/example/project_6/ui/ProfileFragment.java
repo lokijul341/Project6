@@ -20,6 +20,7 @@ import androidx.core.app.NotificationManagerCompat;
 import androidx.core.content.ContextCompat;
 import androidx.fragment.app.Fragment;
 
+import com.example.project_6.ServiceClass;
 import com.example.project_6.databinding.Screen1Binding;
 import com.example.project_6.MainActivity;
 import com.example.project_6.R;
@@ -91,7 +92,7 @@ public class ProfileFragment extends Fragment {
 
 
         });
-       /* binding.imagebutton2.setOnClickListener(new View.OnClickListener() {
+        binding.imagebutton2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M && !Settings.canDrawOverlays(getContext())) {
@@ -103,7 +104,7 @@ public class ProfileFragment extends Fragment {
                     getActivity().startService(intent);
                 }
             }
-        });*/
+        });
     }
         @Override
         public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions,
